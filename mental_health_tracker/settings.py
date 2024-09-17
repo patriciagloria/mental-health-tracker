@@ -122,4 +122,10 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_TRUSTED_ORIGINS = ["http://localhost","http://127.0.0.1","http://patricia-gloria-mentalhealthtracker.pbp.cs.ui.ac.id", "http://patricia-gloria-mentalhealthtracker.pbp.cs.ui.ac.id"]
-
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [BASE_DIR / 'templates'], # Tambahkan konten baris ini
+        'APP_DIRS': True,
+    }
+]
